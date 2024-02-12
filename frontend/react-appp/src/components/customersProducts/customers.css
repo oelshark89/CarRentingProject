@@ -1,0 +1,33 @@
+
+
+    .customer-details {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      
+
+.tableOfCustomers{
+
+    border: solid black 1px;
+    margin-bottom: 5vh;
+    margin-top:  4vh; ;
+    border-radius: 20vh ;
+}
+.tableOfCustomers *{
+    border: 1px solid #212529;
+
+    text-align: center;
+}
+.th{
+color: #CC6119 !important;
+
+}
+.table-title *{
+    color: #CC6119;
+    background-color:#89ADE6  ;
+}
+.id{
+    background-color: #AAAAAA;
+}

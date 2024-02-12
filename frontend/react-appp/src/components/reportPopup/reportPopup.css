@@ -1,0 +1,56 @@
+.popup-emad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content-emad {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#input-emad[type="date"]::-webkit-datetime-edit-text {
+  color: #333; /* Adjust the color as needed */
+}
+/* Add this rule to improve visibility of date input in Chrome */
+#input-emad[type="date"]::-webkit-datetime-edit {
+  color: #333; /* Adjust the color as needed */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px; /* Adjust as needed */
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.button-return {
+  margin-top: 10px; /* Adjust as needed */
+  margin-left: auto; /* This will push the button to the right */
+  display: block; /* Ensures the button takes up the full width */
+}
+
+#text-emad {
+  color: #333; /* Set the text color as needed */
+}
+
+/* Add more styles as needed */
+
+/* Add more styles as needed */

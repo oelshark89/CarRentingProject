@@ -1,0 +1,10 @@
+.footer{
+    background-color: #212529 !important;
+    color: white !important;
+}
+.contain.bg-dark *{
+    color: white !important;
+}
+.logo{
+    width: 13vh;
+}

@@ -1,0 +1,134 @@
+img {
+  height: auto;
+  width: 100%;
+}
+.containerProducts {
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart button {
+  background-color: #6c98e1;
+  border-color: #6c98e1;
+  flex-direction: column;
+  padding: 1vh;
+  border: none;
+}
+.cart button:hover {
+  background-color: #89ade6;
+  border-color: #89ade6;
+  position: relative;
+}
+
+.description p {
+  border-bottom-color: red;
+  border-bottom-width: 5px;
+  margin-bottom: 0px;
+}
+
+.caption > * {
+  margin-bottom: 0.5vh !important;
+}
+
+.container-flex-contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  justify-items: center; /* Center items horizontally */
+  align-items: center;
+  border-bottom: #aaaaaa solid 1px;
+  padding-bottom: 2.5vh; /* Center items vertically */
+  padding-top: 0px !important ;
+}
+
+/* Optional: Add styles for individual grid items if needed */
+.details * {
+  padding-top: 1vh;
+}
+.features {
+  padding-top: 0.8vh;
+  text-align: center;
+  color: #aaaaaa;
+}
+
+.heading-cars {
+  text-align: center;
+}
+
+.form-Search {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 4vh;
+}
+/* Define styles for combined classes */
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center; /* Your combined styles go here */
+}
+
+.flex-Search {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 1vh;
+  padding-top: 4vh;
+  padding-bottom: 1vh;
+  justify-content: center;
+  @media only screen and (max-width: 1200px) {
+    align-items: center; /* Align items to center for screens up to 767px width */
+    padding-top: 10px;
+  }
+}
+
+.input-wrapper {
+  background-color: white;
+  width: 50%;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding-top: vh;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black !important;
+  @media only screen and (max-width: 1200px) {
+    max-width: 15vh; /* Align items to center for screens up to 767px width */
+  }
+}
+
+.search-bar {
+  background-color: transparent;
+  border: none !important;
+  height: 100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 10px;
+}
+.search-bar:focus {
+  outline: none;
+}
+#search-icon {
+  color: #6c98e1;
+}
+
+.heading-cars {
+  padding-top: 4vh;
+}
+
+.products {
+  padding-bottom: 50px;
+}
+
+.image {
+  height: 350px;
+  width: 350px;
+  margin: auto;
+}

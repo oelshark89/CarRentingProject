@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welecome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Playfair+Display&family=Raleway:wght@100;200&family=Roboto:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
+<script>
+    function getName() {
+        var Name = localStorage.getItem("Name");
+        return Name;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var namePlaceholder = document.getElementById("namePlaceholder");
+        var name = getName();
+        if (name) {
+            namePlaceholder.textContent = name;
+        } else {
+            namePlaceholder.textContent = "Guest";
+        }
+    });
+</script>
+</head>
+<body>
+    <div id="container">
+        <div class="welcomeContents">
+            <h1>Welcome, <span id="namePlaceholder"></span></h1>
+            <div class="signIn">
+                <p>Want to sign in?<a href="index.html"> SIGN IN</a></p>
+                
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
