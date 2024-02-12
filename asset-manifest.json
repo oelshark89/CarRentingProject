@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-appp/static/css/main.360f83ad.css",
+    "main.js": "/react-appp/static/js/main.ed59dd72.js",
+    "static/media/banner1.png": "/react-appp/static/media/banner1.cff6e56c055d5fa7740f.png",
+    "static/media/background.jpeg": "/react-appp/static/media/background.92438fba8faa61d728d2.jpeg",
+    "static/media/f4617f7071.jpeg": "/react-appp/static/media/f4617f7071.a3acc417fd4a6aabbc5d.jpeg",
+    "index.html": "/react-appp/index.html",
+    "main.360f83ad.css.map": "/react-appp/static/css/main.360f83ad.css.map",
+    "main.ed59dd72.js.map": "/react-appp/static/js/main.ed59dd72.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.360f83ad.css",
+    "static/js/main.ed59dd72.js"
+  ]
+}
