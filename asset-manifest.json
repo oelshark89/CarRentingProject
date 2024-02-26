@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/CarRentingProject/static/css/main.43463cc4.css",
-    "main.js": "/CarRentingProject/static/js/main.c8079ba2.js",
+    "main.js": "/CarRentingProject/static/js/main.592e7b64.js",
     "static/media/banner1.png": "/CarRentingProject/static/media/banner1.cff6e56c055d5fa7740f.png",
     "static/media/background.jpeg": "/CarRentingProject/static/media/background.92438fba8faa61d728d2.jpeg",
     "static/media/f4617f7071.jpeg": "/CarRentingProject/static/media/f4617f7071.a3acc417fd4a6aabbc5d.jpeg",
     "index.html": "/CarRentingProject/index.html",
     "main.43463cc4.css.map": "/CarRentingProject/static/css/main.43463cc4.css.map",
-    "main.c8079ba2.js.map": "/CarRentingProject/static/js/main.c8079ba2.js.map"
+    "main.592e7b64.js.map": "/CarRentingProject/static/js/main.592e7b64.js.map"
   },
   "entrypoints": [
     "static/css/main.43463cc4.css",
-    "static/js/main.c8079ba2.js"
+    "static/js/main.592e7b64.js"
   ]
 }
