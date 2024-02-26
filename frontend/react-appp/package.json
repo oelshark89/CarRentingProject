@@ -1,5 +1,5 @@
 {
-  "homepage": "https://oelshark89.github.io/carrentingproject",
+  "homepage": "https://oelshark89.github.io/CarRentingProject/",
   "name": "react-appp",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.3",
     "bootstrap": "^5.3.2",
-    "gh-pages": "^6.1.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
@@ -22,7 +21,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "react-scripts": "^5.0.1"
   }
 }
