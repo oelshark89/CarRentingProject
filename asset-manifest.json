@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/carRentingProject/static/css/main.98b2bcbe.css",
-    "main.js": "/carRentingProject/static/js/main.312d8cf3.js",
-    "static/media/banner1.png": "/carRentingProject/static/media/banner1.cff6e56c055d5fa7740f.png",
-    "static/media/background.jpeg": "/carRentingProject/static/media/background.92438fba8faa61d728d2.jpeg",
-    "static/media/f4617f7071.jpeg": "/carRentingProject/static/media/f4617f7071.a3acc417fd4a6aabbc5d.jpeg",
-    "index.html": "/carRentingProject/index.html",
-    "main.98b2bcbe.css.map": "/carRentingProject/static/css/main.98b2bcbe.css.map",
-    "main.312d8cf3.js.map": "/carRentingProject/static/js/main.312d8cf3.js.map"
+    "main.css": "/CarRentingProject/static/css/main.43463cc4.css",
+    "main.js": "/CarRentingProject/static/js/main.175528fb.js",
+    "static/media/banner1.png": "/CarRentingProject/static/media/banner1.cff6e56c055d5fa7740f.png",
+    "static/media/background.jpeg": "/CarRentingProject/static/media/background.92438fba8faa61d728d2.jpeg",
+    "static/media/f4617f7071.jpeg": "/CarRentingProject/static/media/f4617f7071.a3acc417fd4a6aabbc5d.jpeg",
+    "index.html": "/CarRentingProject/index.html",
+    "main.43463cc4.css.map": "/CarRentingProject/static/css/main.43463cc4.css.map",
+    "main.175528fb.js.map": "/CarRentingProject/static/js/main.175528fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.98b2bcbe.css",
-    "static/js/main.312d8cf3.js"
+    "static/css/main.43463cc4.css",
+    "static/js/main.175528fb.js"
   ]
 }
