@@ -15,7 +15,7 @@ Administrators benefit from a comprehensive management suite. They can search fo
 
 ## Features
 
-##Login Page:
+**Login Page**:
 
 This is the initial entry point for users to access their accounts. It provides a secure and reliable authentication process with the following validation checks:
 
