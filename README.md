@@ -19,9 +19,9 @@ Administrators benefit from a comprehensive management suite. They can search fo
 
 This is the initial entry point for users to access their accounts. It provides a secure and reliable authentication process with the following validation checks:
 
-**Missing Credentials:** An error message is displayed if any of the required fields, email or password, are left blank.
-**Incorrect Credentials:** If the entered email and/or password do not match the user's registered information, an error message is presented, guiding them towards correcting their input.
-**Successful Login:** Upon successful validation, the user is seamlessly directed to the homepage, granting them full access to the application's functionalities.
+**Missing Credentials:** An error message is displayed if any of the required fields, email or password, are left blank.<br>
+**Incorrect Credentials:** If the entered email and/or password do not match the user's registered information, an error message is presented, guiding them towards correcting their input.<br>
+**Successful Login:** Upon successful validation, the user is seamlessly directed to the homepage, granting them full access to the application's functionalities.<br>
 
 
 
