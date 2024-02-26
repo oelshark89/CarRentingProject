@@ -1,0 +1,88 @@
+/* App.css or your styling file */
+.admin-page {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 0;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: width 0.5s ease;
+  overflow: hidden;
+}
+
+/* App.css or your styling file */
+.sidebar .sidebar-toggle-btn {
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.sidebar-toggle {
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.sidebar.open {
+  width: 20vh;
+}
+.sidebar.open.cars {
+  width: 28vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar li {
+  margin-bottom: 52px; /* Adjusted margin */
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #f4780c;
+  margin-left: 4px;
+}
+
+.content {
+  flex-grow: 1;
+  overflow: auto;
+  transition: 0.8s ease;
+}
+
+.content-shifted {
+  margin-left: 0px; /* Adjusted margin */
+}
+
+.content-toggle {
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #f6650b;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 99999999999999 !important; 
+}

@@ -1,0 +1,42 @@
+.containerText{
+    background-color: #212529;
+    height: auto;
+
+    padding-bottom: 2px;
+   
+}
+#title{
+    padding-top: 2vh;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.brandName{
+
+    color: #CC6119;
+    font-weight: bold;
+}
+
+.nav.nav-tabs{
+    border: none;
+    gap: 2px !important;
+    border-radius: 0px !important;
+
+   
+}  
+.nav-link.tab:not(.active) {
+    background-color: #393C3E;
+    color:#AAAAAA; /* Optional: Set text color for better visibility */
+  }
+
+
+  .nav-link.active {
+    background-color: white;
+    color: #CC6119 !important; /* Optional: Set text color for better visibility */
+  }
+  .nav-link.tab{
+    font-weight: bold;
+    padding-right: 5vh !important;
+    padding-left: 5vh !important;
+    font-size: 20px;
+    
+  }

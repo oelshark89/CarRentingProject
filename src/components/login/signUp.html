@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100&family=Playfair+Display&family=Raleway:wght@100;200&family=Roboto:wght@300&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <script>
+    function dataBase() {
+        const emailError = document.getElementById("emailError");
+        const emailInput = document.getElementById("Email");
+        const nameInput = document.getElementById("Name");
+        const passwordInput = document.getElementById("Password");
+        emailError.style.display = "none";
+        emailInput.style.border = '';
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            if (this.status === 200) {
+                const response = this.responseText;
+                if (response.toLowerCase().includes("failed")) {
+                    emailError.style.display = "block";
+                    emailInput.style.borderColor="#c62928";
+                    return false;
+                   
+                } else {
+                    // Form submission successful
+                    document.forms["signupForm"].submit();
+                    return true;
+                }
+            } else {
+                // Handle HTTP error here
+                console.error("HTTP error: " + this.status);
+            }
+        };
+
+        // Construct the URL with query parameters
+        const url = `http://localhost/lab1/signup.php?Email=${emailInput.value}&Name=${nameInput.value}&Password=${passwordInput.value}`;
+
+        xhttp.open("GET", url, true);
+        xhttp.send();
+        return false; // Prevent the form from submitting here
+    }
+</script>
+
+<script>
+    function validateForm() {
+        var temp = 0;
+        var emailInput = document.forms["signupForm"]["Email"];
+        var nameInput = document.forms["signupForm"]["Name"];
+        var passwordInput = document.forms["signupForm"]["Password"];
+        var confirmPassword = document.forms["signupForm"]["confirmPassword"];
+        const emailError = document.getElementById("emailError");
+        const passwordError = document.getElementById("passwordError");
+        const passwordErrorEmpty = document.getElementById("passwordErrorEmpty");
+        const nameError = document.getElementById("nameError");
+        emailError.style.display = "none";
+        passwordError.style.display = "none";
+        passwordErrorEmpty.style.display = "none";
+        nameError.style.display = "none";
+        emailInput.style.border = '';
+        nameInput.style.border = '';
+        passwordInput.style.border = '';
+        confirmPassword.style.border = '';
+
+        if (passwordInput.value.length === 0) {
+            passwordErrorEmpty.style.display = "block";
+            passwordInput.style.borderColor = "#c62928";
+            confirmPassword.style.borderColor = "#c62928";
+            temp = 1;
+        }
+        if (passwordInput.value !== confirmPassword.value) {
+            passwordError.style.display = "block";
+            passwordInput.style.borderColor = "#c62928";
+            confirmPassword.style.borderColor = "#c62928";
+            temp = 1;
+        }
+        if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailInput.value)) {
+            emailError.style.display = "block";
+            emailInput.style.borderColor = "#c62928";
+            temp = 1;
+        }
+        if (nameInput.value.length === 0) {
+            nameError.style.display = "block";
+            nameInput.style.borderColor = "#c62928";
+            temp = 1;
+        }
+        // If you want to show an alert for successful validation, you can place it here
+        if (temp === 1) {
+            
+            return false;
+        }
+        return true;
+    }
+</script>
+<script>
+    function populateStorage() {
+       
+  localStorage.setItem("Name", document.getElementById("Name").value);
+ 
+  return true;
+}
+
+</script>
+</head>
+<body>
+    <div id="container">
+        <form name="signupForm" class="signupContents" action="welcome.html"  onsubmit="return validateForm() && dataBase()" method="post">
+            <h1>SIGN UP</h1>1
+            <input type="text" id="Name" name="Name" placeholder="Name">
+            <input type="text" id="Email" name="Email" placeholder="Email"> 
+            <input type="password" id="Password" name="Password" placeholder="Password">
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password">
+            <input type="submit" onclick="populateStorage() " value="Sign Up">
+            <p id="passwordError" style="color: #c62928; display: none;">Password and Confirm Password do not match.</p>
+            <p id="passwordErrorEmpty" style="color: #c62928; display: none;">You must enter a password.</p>
+            <p id="emailError" style="color: #c62928; display: none;">You have entered an invalid email address!</p>
+            <p id="nameError" style="color: #c62928; display: none;">You have to enter a name.</p>
+            <div id="responseMessage"></div>
+            <p id="errorMessage" style="color: #c62928; display: none;">A user is already registered with this e-mail address.</p>
+            <div class="spacer"></div>
+        </form>
+    </div>
+
+    
+
+    
+</body>
+</html>

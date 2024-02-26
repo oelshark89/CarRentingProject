@@ -1,0 +1,50 @@
+
+
+.customer-details {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+
+.tableOfCustomers{
+
+border: solid black 1px;
+margin-bottom: 5vh;
+margin-top:  4vh; ;
+border-radius: 20vh ;
+}
+.tableOfCustomers *{
+border: 1px solid #212529;
+
+text-align: center;
+}
+.th{
+color: #CC6119 !important;
+
+}
+.table-title *{
+color: #CC6119;
+background-color:#89ADE6  ;
+}
+.id{
+background-color: #AAAAAA;
+}
+
+.btn-primary.update {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #6c98e1;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary.update:hover {
+  background-color: #89ade6;
+}

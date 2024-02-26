@@ -1,0 +1,16 @@
+/* MyComponent.css */
+
+img{
+    width: 13vh;
+}
+.btn.btn-warning {
+    
+    
+    background-color: #CC6119;
+    border: none;
+}
+.btn.btn-warning a{
+
+    color: white;
+    
+} 

@@ -1,0 +1,226 @@
+body{
+    font-family: sans-serif;
+  
+  }
+  #containerNewStatusPopup{
+    
+   
+   position: fixed ;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;    
+
+   
+}
+  .newStatusForm{
+    background-color: #212529;
+    width: 50vh ;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column; /* Stacks the child elements vertically */
+    align-items: center; /* Centers the child elements horizontally */
+    justify-content: center; /* Centers the child elements vertically */
+    padding-bottom: 20px;
+    
+  }
+  
+  .newStatusForm p{
+      color:#6c757d;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+  .newStatusForm h1{
+    color: white;
+      letter-spacing: 2px;
+      margin-top: 20px ;
+      margin-bottom: 0px;
+      font-weight: 500;
+      font-size: 2.5rem;
+  }
+  
+
+  input[type=date]{
+      outline: none;
+      border: 2px solid #6C98E1;
+      border-radius: 24px;
+      padding: 10px 10px;
+      color:white;
+      text-align: center;
+      background-color: transparent;
+      margin: 10px auto;
+      transition: 0.25s;
+      width: 240px;
+      
+      
+  
+    }
+  input[type=date]:focus{
+      border: 2px solid #CC6119 !important;
+      border-radius: 24px;
+      padding: 10px 10px;
+      text-align: center;
+      background-color: transparent;
+      width: 280px;
+      color: white;
+  
+  
+    }
+    /*input[type=submit] {
+      border: 3px solid#CC6119;
+      border-radius: 20px;
+      padding: 16px;
+      text-align: center;
+      width: 120px;
+      background-color: transparent;
+      color: white;
+      margin-top: 10px;
+  
+    }*/
+    input[type=submit]:hover {
+      border: 3px solid#CC6119;
+      border-radius: 20px;
+      padding: 16px;
+      text-align: center;
+      width: 120px;
+      background-color:#CC6119;
+      color: white;
+  
+    }
+    .newStatusForm a{
+      color: #6c757d;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+  
+ 
+  
+  .popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    }
+    
+    .popup-inner {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    width: 40%;
+    }
+    .dropdownMenu{
+        outline: none;
+        border: 2px solid #6C98E1;
+        border-radius: 24px;
+        padding: 10px 10px;
+        color:white;
+        text-align: center;
+        background-color: transparent;
+        margin: 10px auto;
+        transition: 0.25s;
+        width: 240px;
+    }
+    .dropdownMenu:focus{
+
+        border: 2px solid #CC6119 !important;
+        border-radius: 24px;
+        padding: 10px 10px;
+        text-align: center;
+        background-color: transparent;
+        width: 280px;
+        color: white;
+    }
+    .dropdownMenu option {
+        font-size: 14px;
+        color: black;
+      }
+
+ 
+  /*.popup-inner {
+background-color: white;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+width: 40%;
+}
+
+.popup-inner h2 {
+margin-top: 0;
+}
+
+.popup-inner label {
+display: block;
+margin-bottom: 10px;
+}
+
+.popup-inner input {
+width: 100%;
+padding: 5px;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin-bottom: 10px;
+}
+
+.popup-inner button[type="submit"],
+.popup-inner button[type="button"] {
+background-color: #4CAF50;
+color: white;
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-right: 10px;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.popup-inner button[type="submit"]:hover,
+.popup-inner button[type="button"]:hover {
+background-color: #45a049;
+}
+
+.popup-inner button[type="submit"] {
+margin-top: 20px;
+}
+
+.popup-inner button[type="button"] {
+margin-top: 20px;
+background-color: #f44336;
+}
+
+.popup-inner button[type="button"]:hover {
+background-color: #da190b;
+}
+
+.popup-inner button[type="submit"]:disabled {
+background-color: #bfbfbf;
+color: #ffffff;
+cursor: not-allowed;
+}
+
+.popup-inner button[type="button"]:disabled {
+background-color: #bfbfbf;
+color: #ffffff;
+cursor: not-allowed;
+}*/
