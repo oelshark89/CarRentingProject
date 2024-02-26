@@ -1,8 +1,11 @@
 # Car Dealership Web Application
 
 ## Description
+This project is a comprehensive car rental website built with React.js and Node.js, offering a robust and scalable solution for users and administrators. The website features a modular architecture for flexibility and ease of maintenance, and prioritizes performance for a fast and efficient experience.
 
-Developed a robust Car Rental System featuring a user-friendly interface for customers to reserve cars and an intuitive admin portal for fleet management. Leveraging React.js for frontend and Node.js (Express.js) for backend, the system integrates with MySQL for efficient data handling. Key functionalities include user authentication, real-time status tracking, and dynamic reporting tools for administrators. This project showcases my proficiency in full-stack development and database management, delivering a seamless and feature-rich experience for both customers and administrators.
+Users can seamlessly search and browse a wide selection of cars and reserve their chosen vehicle with ease. The user-friendly interface and intuitive navigation ensure a smooth experience for both seasoned travelers and first-time renters.
+
+Administrators benefit from a comprehensive management suite. They can search for, modify the state of, and view all cars in the system. Additionally, they have access to user and office management functionalities, including viewing all reservations, registered users, and registered offices. To gain valuable insights, administrators can also generate various reports based on their needs.
 
 ## Technologies Used
 
@@ -12,29 +15,17 @@ Developed a robust Car Rental System featuring a user-friendly interface for cus
 
 ## Features
 
-Customer Portal: A user-friendly interface allowing customers to register, log in, and reserve cars based on their preferences and travel dates.
+##Login Page:
 
-Admin Portal: Empowering administrators to manage the fleet, track reservations, and gain insights through dynamic reporting tools.
+This is the initial entry point for users to access their accounts. It provides a secure and reliable authentication process with the following validation checks:
 
-Database Management: Utilized MySQL to store and retrieve data, optimizing queries for seamless system performance.
+Missing Credentials: An error message is displayed if any of the required fields, email or password, are left blank.
+Incorrect Credentials: If the entered email and/or password do not match the user's registered information, an error message is presented, guiding them towards correcting their input.
+Successful Login: Upon successful validation, the user is seamlessly directed to the homepage, granting them full access to the application's functionalities.
 
-Reports: Implemented diverse reporting functionalities, including daily payments, customer reservations, car statuses, and more.
 
 
-Admin Homepage
-![Screenshot (198)](https://github.com/emadnawarr/CarDealershipSystem/assets/121241478/55b52262-e218-4970-95b4-74533733304b)
-
-Admin Homepage Cars section where admin can search or add a car
-![Screenshot (199)](https://github.com/emadnawarr/CarDealershipSystem/assets/121241478/f1840295-885d-413b-b5db-8619b44cd692)
-
-Admin Checking the reservations
-![Screenshot (201)](https://github.com/emadnawarr/CarDealershipSystem/assets/121241478/084d31b0-82da-4916-992e-c0000aa2e5c1)
-
-Admin generating a report
-![Screenshot (204)](https://github.com/emadnawarr/CarDealershipSystem/assets/121241478/0e4113d2-2f7c-4d21-848b-2d0adec64fee)
-
-Customer searching for a toyota to reserve
-![Screenshot (205)](https://github.com/emadnawarr/CarDealershipSystem/assets/121241478/6e4b20e6-56bd-41e5-bd35-a032767a87d4)
+https://github.com/oelshark89/CarRentingProject/assets/93015058/503aece8-33fd-4f17-9d07-9ee5db969c11
 
 
 
