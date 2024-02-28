@@ -28,7 +28,7 @@ const Layout = () => {
     const { email, password } = formData;
     
     try {
-      const response = await axios.post('http://localhost:3003/login', { email, password });
+      const response = await axios.post('https://car-renting-project.vercel.app/login', { email, password });
       console.log('Response:', response.data);
       // Alert with the response data
       console.log(response.data)
