@@ -13,7 +13,7 @@ const app = express();
 
 app.use(cors());
 app.use(cors({
-    origin: 'https://car-renting-project.vercel.app/'
+    origin: 'https://car-renting-project-2th5.vercel.app/'
   }));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
