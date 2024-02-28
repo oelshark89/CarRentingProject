@@ -15,7 +15,10 @@ app.use("/",(req, res) => {
 });
 
 app.use(cors({
-    origin:'https://car-renting-project-2th5.vercel.app'
+    origin:['https://car-renting-project-2th5.vercel.app'],
+
+    methods:["POST" , "GET"],
+    credentials:true
   }));
   app.u
 app.use(express.json());
