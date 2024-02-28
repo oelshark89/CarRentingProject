@@ -4,12 +4,16 @@ const cors = require("cors");
 const path = require("path");  // Include the 'path' module
 const bodyParser = require("body-parser");
 const mysql = require("mysql");
-const port = 3003;
+const port = 8000;
 
 /**create an object from express */
 const app = express();
 
 /**tell what our app to use */
+app.use("/",(req, res) => {
+  res.send("server is running");
+});
+
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
