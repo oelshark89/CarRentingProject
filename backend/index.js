@@ -13,7 +13,7 @@ const app = express();
 
 
 app.use(cors({
-    origin:['https://car-renting-project-2th5.vercel.app/'],
+    origin:['https://car-renting-project-2th5.vercel.app'],
 
     methods:["POST" , "GET"],
     credentials:true
@@ -153,7 +153,7 @@ app.post('/signup', (req, res) => {
 });
 
 
-app.post('/login', (req, res) => {
+app.post('', (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
