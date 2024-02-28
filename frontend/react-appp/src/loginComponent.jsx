@@ -20,7 +20,7 @@ const Layout = () => {
       [name]: value,
     }));
   };
-
+axios.defaults.withCredentials=true;
   // Function to handle form submission
   const handleSubmit = async (event) => {
     event.preventDefault();
