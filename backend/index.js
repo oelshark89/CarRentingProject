@@ -8,10 +8,13 @@ const port = 8000;
 
 /**create an object from express */
 const app = express();
+const allowedOrigin = process.env.ALLOWED_ORIGIN || 'https://car-renting-project-2th5.vercel.app'; // Replace with your actual frontend URL
 
 /**tell what our app to use */
 
-app.use(cors());
+app.use(cors({
+    origin: allowedOrigin // Use the allowed origin variable
+  }));
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
