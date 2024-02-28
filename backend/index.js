@@ -4,7 +4,7 @@ const cors = require("cors");
 const path = require("path");  // Include the 'path' module
 const bodyParser = require("body-parser");
 const mysql = require("mysql");
-const port = 8000;
+const port = 3306;
 
 /**create an object from express */
 const app = express();
@@ -25,10 +25,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.listen(port, () => console.log(`Listening on port ${port}..`));
 
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'car_rental_system',
+  host: 'sql3.freesqldatabase.com',
+  user: 'sql3686782',
+  password: '69u5mq1BWD',
+  database: 'sql3686782',
 });
 
 db.connect((err) => {
