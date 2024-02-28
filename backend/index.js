@@ -10,9 +10,7 @@ const port = 8000;
 const app = express();
 
 /**tell what our app to use */
-app.use("/",(req, res) => {
-  res.send("server is running");
-});
+
 
 app.use(cors({
     origin:['https://car-renting-project-2th5.vercel.app'],
