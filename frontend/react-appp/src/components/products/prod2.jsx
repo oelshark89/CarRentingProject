@@ -9,7 +9,7 @@ import { FaPlus } from 'react-icons/fa';
 
 const getAllCars = async (setProducts) => {
     try {
-      const response = await axios.get('http://localhost:3003/getAllCars');
+      const response = await axios.get('https://car-renting-project.vercel.app/getAllCars');
       const data = response.data;
       setProducts(data);
     } catch (error) {
@@ -28,7 +28,7 @@ function App({toggleState }) {
             const searchValueBackend = searchValue.searchVal;
             if (typeof searchValue.searchVal !== 'undefined') {
 
-                const response = await axios.post('http://localhost:3003/admin/Cars/searchCar', { searchValueBackend });
+                const response = await axios.post('https://car-renting-project.vercel.app/admin/Cars/searchCar', { searchValueBackend });
                 const data = response.data;
                 const message = response.data.message || 'An error occurred';
                 if (message !== 'No Car matches!') {
@@ -55,12 +55,12 @@ function App({toggleState }) {
 
 
     useEffect(() => {
-        fetchData('http://localhost:3003/getAllCars');
+        fetchData('https://car-renting-project.vercel.app/getAllCars');
     }, []);
 
     useEffect(() => {
         if (searchValue) {
-            fetchData('http://localhost:3003/admin/Cars/searchCar');
+            fetchData('https://car-renting-project.vercel.app/admin/Cars/searchCar');
         }
     }, [searchValue]);
 
@@ -86,7 +86,7 @@ function App({toggleState }) {
 
     const handleSearchSubmit = (e) => {
         e.preventDefault();
-        fetchData('http://localhost:3003/admin/Cars/searchCar');
+        fetchData('https://car-renting-project.vercel.app/admin/Cars/searchCar');
     };
 
     return (

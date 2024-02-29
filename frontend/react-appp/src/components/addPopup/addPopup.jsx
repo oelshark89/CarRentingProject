@@ -51,7 +51,7 @@ const Layout = ({setShowPopup,getAllCars }) => {
     const { model,year,plateId,office_id,mileage,features,pricePerDay,imageUrl } = formData;
     
     try {
-      const response = await axios.post('http://localhost:3003/admin/registerCar', { model,year,plateId,office_id,mileage,features,pricePerDay,imageUrl });
+      const response = await axios.post('https://car-renting-project.vercel.app/admin/registerCar', { model,year,plateId,office_id,mileage,features,pricePerDay,imageUrl });
       console.log('Response:', response.data);
       getAllCars();
       // Alert with the response data

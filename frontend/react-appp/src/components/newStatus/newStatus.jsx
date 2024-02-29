@@ -47,7 +47,7 @@ const Layout = ({userId,carId,setShowPopup}) => {
     console.log(newStatus);
     try {
 
-      const response = await axios.put('http://localhost:3003/admin/updateReservationStatus', { customerId,carId , newStatus });
+      const response = await axios.put('https://car-renting-project.vercel.app/admin/updateReservationStatus', { customerId,carId , newStatus });
       console.log('Response:', response.data);
       // Alert with the response data
       const message = response.data.message || 'An error occurred'; // Default message if 'message' is not present

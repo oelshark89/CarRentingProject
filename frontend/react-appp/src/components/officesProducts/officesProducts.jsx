@@ -18,7 +18,7 @@ function App({ userId }) {
       const searchValueBackend = searchValue.searchVal;
       if (typeof searchValue.searchVal !== 'undefined') {
        console.log(searchValueBackend);
-        const response = await axios.post('http://localhost:3003/admin/Cars/searchOffices', { searchValueBackend });
+        const response = await axios.post('https://car-renting-project.vercel.app/admin/Cars/searchOffices', { searchValueBackend });
         console.log('Response:', response.data);
         const data = response.data;
         const message = response.data.message || 'An error occurred';
@@ -47,12 +47,12 @@ function App({ userId }) {
 
 
   useEffect(() => {
-    fetchData('http://localhost:3003/getAllOffices');
+    fetchData('https://car-renting-project.vercel.app/getAllOffices');
   }, []);
 
   useEffect(() => {
     if (searchValue) {
-      fetchData('http://localhost:3003/admin/Cars/searchCustomer');
+      fetchData('https://car-renting-project.vercel.app/admin/Cars/searchCustomer');
     }
   }, [searchValue]);
 
@@ -67,7 +67,7 @@ function App({ userId }) {
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    fetchData('http://localhost:3003/admin/Cars/searchCar');
+    fetchData('https://car-renting-project.vercel.app/admin/Cars/searchCar');
   };
 
   return (

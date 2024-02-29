@@ -44,7 +44,7 @@ const Layout = ({userId,carId,setShowPopup}) => {
     const { Id, startDate, endDate } = formData;
     const customerId=userId;
     try {
-      const response = await axios.post('http://localhost:3003/reserveCar', { customerId,carId, startDate, endDate });
+      const response = await axios.post('https://car-renting-project.vercel.app/reserveCar', { customerId,carId, startDate, endDate });
       console.log('Response:', response.data);
       // Alert with the response data
       const message = response.data.message || 'An error occurred'; // Default message if 'message' is not present
