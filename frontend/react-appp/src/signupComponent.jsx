@@ -28,7 +28,7 @@ function App() {
     const { name, email, password, confirmPassword, address, phone } = formData;
     console.log('Form Data:', { name, email, password, confirmPassword, address, phone });
     try {
-      const response = await axios.post('http://localhost:3003/signup', {
+      const response = await axios.post('https://car-renting-project.vercel.app/signup', {
         name,
         email,
         password,
