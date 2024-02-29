@@ -36,6 +36,7 @@ function App() {
         address,
         phone
       });
+      
       console.log('Response:', response.data);
 
       // Alert with the response data
@@ -65,7 +66,7 @@ function App() {
   return (
     <div className='loginBackground'>
     <div id="container">
-      <div className="signupContents">
+      <div className="loginContents">
         <h1>Signup</h1>
         <p style={{ color: 'white' }}>Please enter your login and password!</p>
         <input
