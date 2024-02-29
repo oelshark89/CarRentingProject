@@ -255,3 +255,67 @@ padding-bottom: 20px;
   color: white;
 
 }
+.signupContents{
+  background-color: #212529;
+ 
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 30px;
+  flex: 0;
+}
+.signupContents h1{
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 10px ;
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 2.5rem;
+  padding: 20px;
+}
+.signupContents p{
+margin-top:10px !important;
+margin-bottom: 10px;
+
+
+}
+.spacer{
+  height: 20px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.signIn{
+  color: #6c757d;
+  
+  flex-direction: column; /* This property may not be needed for this class */
+  justify-content: flex-end; /* Positions the child at the bottom */
+  align-self: center; /* Centers the child horizontally */
+  order: 2; /* Determines the order in which the child is displayed in a flex container */
+  padding-bottom: 20px; 
+
+}
+.signIn a{
+  
+  color: white;
+  text-decoration: none;
+}
+
+#signupButton{
+  margin-bottom: 20px;
+}
